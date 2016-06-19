@@ -1,6 +1,6 @@
 {
   "name": "ember-expanding-sidebars",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple sidebar that expands to reveal sub-routes.",
   "directories": {
     "doc": "doc",
@@ -37,7 +37,6 @@
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
     "ember-try": "^0.2.2",
-    "liquid-fire": "0.23.1",
     "loader.js": "^4.0.1"
   },
   "keywords": [
@@ -45,7 +44,8 @@
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.6",
-    "ember-cli-htmlbars": "^1.0.3"
+    "ember-cli-htmlbars": "^1.0.3",
+    "liquid-fire": "0.23.1"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
