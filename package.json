@@ -1,6 +1,6 @@
 {
   "name": "ember-expanding-sidebars",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple sidebar that expands to reveal sub-routes.",
   "directories": {
     "doc": "doc",

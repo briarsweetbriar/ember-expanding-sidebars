@@ -58,7 +58,7 @@ export default Component.extend({
       const parentRoute = get(this, 'parentRoute');
       const route = get(this, 'section.route');
 
-      return `${parentRoute}.${route}`;
+      return isPresent(parentRoute) ? `${parentRoute}.${route}` : route;
     }
   }).readOnly(),
 
