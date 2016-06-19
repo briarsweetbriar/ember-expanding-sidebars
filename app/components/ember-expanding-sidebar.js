@@ -1,0 +1,1 @@
+export { default } from 'ember-expanding-sidebars/components/ember-expanding-sidebar';

@@ -1,0 +1,7 @@
+{{#link-to fullRoute hook="ember_expanding_sidebar_section_link"}}
+  {{name}}
+{{/link-to}}
+
+{{#liquid-if hasVisibleSections}}
+  {{ember-expanding-sidebar sections=section.sections parentRoute=fullRoute}}
+{{/liquid-if}}
