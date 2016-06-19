@@ -25,3 +25,11 @@ install:
 - bower install
 script:
 - ember try $EMBER_TRY_SCENARIO test
+deploy:
+  provider: npm
+  email: null@ember.theater
+  api_key:
+    secure: Iu99nElo/eIMoTxL/WA4vn/Q6ZjqgXSkk3keUjXTm/qRiVF22et3WdXQeRHZ+3ujsj8xo6EuVJpbL0By930DAS2EeWZYUZJIaMzfhkrWBOz4RNicAZajpjysj1BiiLzzDiJxVj/NEk4KAYmiHsZbqU7tiWm/T99QoPTriX+sVjb2JtxVMmpNUnGfVIS28b19IpE4H4TlOO36KKWzI2Q3O06TsDRXh0Cc5my99Y4IjcFpgxbXAStJexsYwDLgXOML7Slz9WpVuS5mxBcZ1PXo/YLYRJcma9QEAJS73OjaLJ2qEHZXUKiX7qP/onTmUHdaVom96kEtVbH16XZG0kusrftggIGaxGcLDZalQByI72zI6lAMiOiXASIrGma7rjui2tulgtlmIqzvdQtlVfuRSojHukpIJhN1VPWruq7MgDAgxZ+rhz03mbiXhHUYfGXMS2NjvQJm5y1BUF1P6vvH6xFgp7HI3OJOIslZjawOOmO02d4pmJ0Yqq98zd37eEOEHOqAtCV8yNesir5TO7KdL9iKQGfp8Ni4aItSdEOsxh5B7i0HABrlUVSvWaF1kGsjsFtXSbyUKRgai0KieTF4GSDLgi08BqpgqaZgt9WiKa79ycoqnVYSymzpHjdSn7SMLuPmmLNdOG9tM9M//BNxUlkzJUbDucInsXcAV2D+kRk=
+  on:
+    tags: true
+    repo: null-null-null/ember-expanding-sidebars

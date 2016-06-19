@@ -1,26 +1,30 @@
-# Ember-expanding-sidebars
+[![npm version](https://badge.fury.io/js/ember-expanding-sidebars.svg)](https://badge.fury.io/js/ember-expanding-sidebars)
+[![Build Status](https://travis-ci.org/null-null-null/ember-expanding-sidebars.svg?branch=master)](https://travis-ci.org/null-null-null/ember-expanding-sidebars)
 
-This README outlines the details of collaborating on this Ember addon.
+# ember-expanding-sidebars
+
+A simple sidebar for Ember.js routes that expands and collapses, depending on the current route.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+`ember install ember-expanding-sidebars`
 
-## Running
+## Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+```js
+export default Ember.Controller.extend({
+  sections: [{
+    route: 'baz',
+    sections: [{
+      route: 'child-of-baz',
+      sections: [{
+        route: 'grandchild-of-baz'
+      }]
+    }]
+  }]
+})
+```
 
-## Running Tests
-
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+```hbs
+{{ember-expanding-sidebar parentRoute="foo.bar" sections=sections}}
+```
