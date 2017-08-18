@@ -28,7 +28,7 @@ export default Component.extend({
   tagName: 'li',
 
   i18n: service(),
-  router: service(),
+  router: service('-routing'),
 
   currentRouteName: alias('applicationController.currentRouteName'),
   hasSections: notEmpty('section.sections'),
