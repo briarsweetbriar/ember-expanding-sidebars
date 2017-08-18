@@ -27,7 +27,6 @@ export default Component.extend({
   hook: 'ember_expanding_sidebar_section',
   tagName: 'li',
 
-  i18n: service(),
   router: service('-routing'),
 
   currentRouteName: alias('applicationController.currentRouteName'),
@@ -64,10 +63,7 @@ export default Component.extend({
 
   name: computed('section.route', 'section.name', {
     get() {
-      const i18n = get(this, 'i18n');
-      const key = get(this, 'section.name') || get(this, 'section.route');
-
-      return isPresent(i18n) ? i18n.t(`learn.sections.${camelize(key)}`) : key;
+      return get(this, 'section.name') || get(this, 'section.route');
     }
   })
 });
